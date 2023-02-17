@@ -9,6 +9,7 @@ public class Task2 {
     public static void main(String[] args) {
         System.out.printf("The sequence " + calculation() + " ascending");
     }
+
     public static String calculation() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number of figures in the row: ");
@@ -23,10 +24,10 @@ public class Task2 {
             }
             num1 = num2;
         }
+        scanner.close();
         if (count == 0) {
             return "is";
-        }
-        else{
+        } else {
             return "is not";
         }
     }
